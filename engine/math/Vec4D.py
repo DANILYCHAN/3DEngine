@@ -15,7 +15,7 @@ class Vec4D:
     def __repr__(self) -> str:
         return repr((self.x, self.y, self.z, self.w))
 
-    def __copy__(self):
+    def __copy__(self) -> "Vec4D":
         return Vec4D(self.x, self.y, self.z, self.w)
 
     def __sub__(self, other: "Vec4D") -> "Vec4D":
